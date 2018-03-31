@@ -1,0 +1,30 @@
+h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 20%;
+}
+
+h2{
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+
+}
+
+.subtitle{
+  text-align: center;
+  position: relative;
+  
+}
+
+p{
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+body{
+  background: 100% url("pcb.jpg");
+
+}
