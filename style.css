@@ -35,7 +35,7 @@ p{
 body{
   background: 100% url("pcb.jpg");
   background-attachment: scroll;
-
+  background-repeat: no-repeat;
 }
 
 .about{
