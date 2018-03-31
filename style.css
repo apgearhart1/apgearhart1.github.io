@@ -4,19 +4,27 @@ h1{
   font-family: sans-serif;
   color: white;
   font-family: 'Oxygen', sans-serif;
-  margin-top: 20%;
+  margin-top: 0px;
 }
 
 h2{
   color: white;
   font-family: 'Oxygen', sans-serif;
+}
 
+.subtitle h2{
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  padding-bottom: 0px;
+  padding-top: 20%;
+  position: relative;
+  text-align: center;
 }
 
 .subtitle{
   text-align: center;
   position: relative;
-  
+
 }
 
 p{
@@ -26,5 +34,10 @@ p{
 
 body{
   background: 100% url("pcb.jpg");
+  background-attachment: scroll;
+
+}
+
+.about{
 
 }
