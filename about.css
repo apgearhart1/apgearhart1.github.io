@@ -4,19 +4,29 @@ h1{
   font-family: sans-serif;
   color: black;
   font-family: 'Oxygen', sans-serif;
-  margin-top: 0px;
+  margin-top: 10px;
   margin-left: 700px;
 
 }
 
+h2{
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 390px;
+}
 p{
   color: black;
   font-family: 'Oxygen', sans-serif;
   text-align: center;
+  font-size: 25px;
   margin-top: 0px;
   padding-top: 0px;
-  margin-left: 600px;
-  
+  margin-left: 700px;
+
 }
 
 img{
@@ -27,5 +37,17 @@ img{
     transform: rotate(270deg);
     height: 50%;
     width: 50%;
+    padding-top: 0px;
 
+}
+
+ul{
+  list-style-type: circle;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 900px;
 }
