@@ -16,8 +16,20 @@ h2{
   font-size: 25px;
   margin-top: 0px;
   padding-top: 0px;
-  margin-left: 390px;
+  margin-left: 280px;
 }
+
+#pf{
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 250px;
+}
+
+
 p{
   color: black;
   font-family: 'Oxygen', sans-serif;
@@ -29,15 +41,14 @@ p{
 
 }
 
-img{
+#profile{
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(2700deg);
     -o-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
-    height: 50%;
-    width: 50%;
-    padding-top: 0px;
+    height: 40%;
+    width: 40%;
 
 }
 
