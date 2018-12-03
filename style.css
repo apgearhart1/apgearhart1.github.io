@@ -1,126 +1,208 @@
-h1{
-  font-size: 50px;
-  text-align: center;
-  font-family: sans-serif;
-  color: white;
+﻿html, body{
+  height: 100%;
+  width: 100%;
+}
+.navbar{
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #fc2a2a;
+  color: #FFF;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
   font-family: 'Oxygen', sans-serif;
-  margin-top: 0px;
 }
 
-h2{
-  color: white;
-  font-family: 'Oxygen', sans-serif;
+.navbar-brand{
+  float:left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+}
+.navbar-brand img{
+  height: 60px;
 }
 
-.subtitle h2{
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover{
   color: white;
-  font-family: 'Oxygen', sans-serif;
-  padding-bottom: 0px;
-  padding-top: 20%;
+  background-color: #fc2a2a
+
+}
+
+.navbar-inverse .navbar-nav li a{
+  color: #D5D5D5
+}
+
+#home{
+  background: url(img/Image-18.png) no-repeat center center fixed;
+  display: table;
+  height: 100%;
   position: relative;
-  text-align: center;
+  width: 100%;
+  background-size: cover;
 }
-
-.subtitle{
+.landing-text{
+  display: table-cell;
   text-align: center;
-  position: relative;
-
+  vertical-align: middle;
 }
-
-p{
+.landing-text h1{
+  font-size: 500%;
+  font-weight: 700;
   color: white;
-  font-family: 'Oxygen', sans-serif;
+}
+.landing-text h3{
+  font-size: 200%;
+  font-weight: 300;
+  color: white;
+}
+.padding{
+  padding: 80px 0;
+}
+.padding img{
+  width: 75%;
 }
 
-body{
-  background: 100% url("pcb.jpg");
-  background-attachment: scroll;
-  background-repeat: no-repeat;
+.col-sm-6 h1{
+  font-family: "Oxygen";
+  font-size: 4em;
 }
 
-.about{
+.col-sm-6 h3{
+  padding-top: 5%;
+  font-family: "Oxygen";
+  font-size: 2em;
+}
 
+.col-sm-6 p{
+  padding-top: 8%;
+  font-family: "Oxygen";
+  font-size: 1.9em;
+}
+.col-lg-3 h4{
+  font-family: "Oxygen";
+  font-size: 2.5em;
+}
+.col-lg-3 img{
+  width: 145%;
+}
+
+#fixed{
+  background: url(img/max-bender-770110-unsplash.jpg) no-repeat center center fixed;
+  display: table;
+  height: 60%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.carousel-item{
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+footer{
+  width: 100%;
+  background-color: #fc2a2a;
+  padding: 5% 5% 10% 5%;
+  color: #FFF;
+}
+.fa{
+  padding-left: 15px;
+  font-size: 25px;
+  color: white;
+}
+.fa:hover{
+  color: #D5D5D5;
+  text-decoration: none;
+}
+.icon{
+  max-width: 200px;
+}
+@media (max-width: 768px) {
+  .landing-text h1{
+    font-size: 300%;
+  }
+  .fa{
+    font-size: 20px;
+    padding: 10px;
+  }
+  .icon{
+    padding-top: 5%;
+    max-width: 100px;
+  }
 }
 
 
-.container {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #95A5A6;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
 
 
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #95A5A6;
-    display: block;
-    transition: 0.3s;
-    font-family: "Oxygen", sans-serif;
+/*--- iOS Landing Page Fix
+section {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 100%;
+ 	display: table;
 }
+.home-wrap {
+ 	clip: rect(0, auto, auto, 0);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+}
+#home {
+	background-image: url('img/mountains.jpeg');
+ 	position: fixed;
+ 	display: table;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+	z-index: -1;
+}
+.landing-text {
+	z-index: 100;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+--*/
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #BDC3C7;
+/*--- iOS Fixed Image Fix
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
 }
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
+#fixed {
+	background-image: url('img/background.jpg');
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+--*/
